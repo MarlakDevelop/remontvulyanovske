@@ -1,0 +1,42 @@
+:root {
+    --color-light: #FFFFFF;
+    --color-dark: #111111;
+    --color-primary: #FFB800;
+    --color-muted: #AAAAAA;
+}
+
+
+.color-light {
+    color: var(--color-light);
+}
+
+.bg-color-light {
+    background-color: var(--color-light);
+}
+
+
+.color-dark {
+    color: var(--color-dark);
+}
+
+.bg-color-dark {
+    background-color: var(--color-dark);
+}
+
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.bg-color-primary {
+    background-color: var(--color-primary);
+}
+
+
+.color-muted {
+    color: var(--color-muted);
+}
+
+.bg-color-muted {
+    background-color: var(--color-muted);
+}

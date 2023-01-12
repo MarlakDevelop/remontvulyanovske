@@ -1,0 +1,77 @@
+.py-8 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.px-8 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.p-8 {
+    padding: 30px;
+}
+
+.gap-8 {
+    gap: 30px
+}
+
+
+.gap-9 {
+    gap: 35px
+}
+
+
+.pt-10 {
+    padding-top: 40px;
+}
+
+.pb-10 {
+    padding-bottom: 40px;
+}
+
+.py-10 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.px-10 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.p-10 {
+    padding: 40px;
+}
+
+.gap-10 {
+    gap: 40px
+}
+
+.grid-gap-10 {
+    grid-gap: 40px
+}
+
+
+.py-12 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pt-12 {
+    padding-top: 50px;
+}
+
+.pb-12 {
+    padding-bottom: 50px;
+}
+
+.gap-12 {
+    gap: 50px;
+}
+
+
+.py-12 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

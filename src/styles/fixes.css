@@ -1,0 +1,5 @@
+.collapse:not(.show) {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 0;
+}

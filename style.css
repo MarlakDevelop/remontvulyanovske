@@ -1,0 +1,331 @@
+body {
+    font-family: Roboto;
+    font-style: normal;
+}
+
+a {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1420px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.dropdown-icon {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-icon svg {
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+}
+
+.dropdown-icon.collapsed svg {
+    transform: rotate(0deg);
+}
+
+
+.vertical-line {
+    width: 5px;
+}
+
+
+.cube {
+    height: 60px;
+    width: 60px;
+}
+
+@media (min-width: 576px) {
+    .cube {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cube {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+#top-content {
+    z-index: 4000;
+}
+
+.top-navigation {
+    height: 50px;
+}
+
+.top-navigation .link {
+    line-height: 50px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.top-navigation .link::after {
+    content: "";
+    background-color: var(--color-primary);
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: height 0.5s;
+}
+
+.top-navigation .link:hover {
+    color: var(--color-light);
+}
+
+.top-navigation .link:hover::after {
+    height: 4px;
+}
+
+.top-navigation .link.active {
+    color: var(--color-primary);
+}
+
+.top-navigation .link.active::after {
+    height: 4px;
+}
+
+.top-navigation .line {
+    height: 50px;
+    width: 1px;
+    background-color: var(--color-light);
+}
+
+
+.top-sticky-content {
+    position: relative;
+}
+
+.top-sticky-content .form {
+    z-index: 1000;
+    background-color: #FFFFFF;
+    max-width: 400px;
+}
+
+.top-sticky-content .form .dropdown-button {
+    color: #888888 !important;
+    cursor: pointer;
+}
+
+.top-sticky-content .form .dropdown-button[aria-expanded="false"]::after {
+    content: "Развернуть"
+}
+
+.top-sticky-content .form .dropdown-button[aria-expanded="true"]::after {
+    content: "Свернуть"
+}
+
+.top-sticky-content .navbar-button {
+    height: 35px;
+    width: 35px;
+}
+
+.mobile-navigation {
+    box-sizing: border-box;
+    width: 200px;
+    right: -200px;
+    transition: right 0.5s;
+    z-index: 5000;
+    box-shadow: 0 0 5px var(--color-dark);
+}
+
+.mobile-navigation.show {
+    right: 0;
+}
+
+.mobile-navigation .link {
+    color: var(--color-light);
+    transition: color 0.5s;
+}
+
+.mobile-navigation .link:hover {
+    color: var(--color-primary);
+}
+
+.screen .content {
+    z-index: 5;
+}
+
+.screen .background .darker {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.screen .background img {
+    z-index: 2;
+    object-fit: cover;
+}
+
+
+.title .decoration .line {
+    height: 4px;
+    background-color: var(--color-primary);
+    width: 100px;
+}
+
+.title .decoration.light .line {
+    background-color: var(--color-light);
+}
+
+
+.differences .differences-cards .difference-card {
+    width: 300px;
+}
+
+.differences .differences-cards .difference-card .icon {
+    height: 140px;
+}
+
+.gallery .categories .category {
+    color: var(--color-dark);
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.gallery .categories .category:hover {
+    color: var(--color-primary);
+}
+
+.gallery .categories .category.active {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}
+
+.gallery .list {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 576px) {
+    .gallery .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery .list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.gallery .list img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#reviews .swiper-button-prev, #reviews .swiper-button-next {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+#reviews .swiper-button-prev {
+    background-image: url(img/slider/prev.svg);
+}
+
+#reviews .swiper-button-next {
+    background-image: url(img/slider/next.svg);
+}
+
+#reviews .swiper-button-next::after, #reviews .swiper-button-prev::after {
+    display: none;
+}
+
+.review .meta .img {
+    height: 150px;
+    width: 150px;
+}
+
+
+.causes .list .item .decoration .line {
+    height: 35px;
+    background-color: var(--color-primary);
+    width: 5px;
+}
+
+.causes .list .item .text {
+    max-width: 400px;
+}
+
+
+#works .swiper-button-prev, #works .swiper-button-next {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+#works .swiper-button-prev {
+    background-image: url(img/slider/prev.svg);
+}
+
+#works .swiper-button-next {
+    background-image: url(img/slider/next.svg);
+}
+
+#works .swiper-button-next::after, #works .swiper-button-prev::after {
+    display: none;
+}
+
+#works .swiper-slide {
+    width: auto;
+}
+
+.work-container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.work img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.work .meta {
+    box-sizing: border-box;
+}
+
+#footer .link {
+    color: var(--color-light) !important;
+}
+
+
+#steps .side {
+    width: 500px;
+}
+
+@media screen and (max-width: 1400px) {
+    #steps .side {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #steps .side {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #steps .side {
+        width: 100%;
+    }
+}
